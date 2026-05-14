@@ -91,7 +91,7 @@ export function BentoPricing() {
         </div>
         <div className="flex items-center gap-3 p-3">
           <Badge variant="secondary" className="bg-white/10 text-white border-white/20 font-open-sans-custom text-xs">
-            ПРЕМИУМ
+            КОМПЛЕКСНЫЙ РЕМОНТ
           </Badge>
           <Badge
             variant="outline"
@@ -101,23 +101,23 @@ export function BentoPricing() {
           </Badge>
           <div className="ml-auto">
             <Button size="sm" className="bg-white text-black hover:bg-gray-100 font-open-sans-custom text-xs">
-              Подписаться
+              Вызвать мастера
             </Button>
           </div>
         </div>
         <div className="flex flex-col p-3 lg:flex-row">
           <div className="pb-2 lg:w-[30%]">
             <span className="font-mono text-3xl font-semibold tracking-tight text-white [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)]">
-              2 000 ₽
+              от 3 500 ₽
             </span>
-            <span className="text-gray-300 text-xs font-open-sans-custom">/мес</span>
+            <span className="text-gray-300 text-xs font-open-sans-custom"> / выезд</span>
           </div>
           <ul className="text-gray-300 grid gap-2 text-xs lg:w-[70%] font-open-sans-custom">
             {[
-              "2 000 ₽ кредитов включено ежемесячно",
-              "Докупайте кредиты сверх месячного лимита",
-              "5x увеличенный лимит вложений",
-              "Импорт дизайнов из популярных инструментов",
+              "Диагностика и устранение нескольких неисправностей",
+              "Замена труб, кранов, смесителей",
+              "Установка сантехники под ключ",
+              "Гарантия на все виды работ — 1 год",
             ].map((f, i) => (
               <li key={i} className="flex items-center gap-2">
                 <Check className="w-[1.05rem] h-[1.05rem] text-white flex-shrink-0" strokeWidth={3} />
@@ -129,50 +129,57 @@ export function BentoPricing() {
       </div>
 
       <PricingCard
-        titleBadge="СТАРТ"
-        priceLabel="0 ₽"
+        titleBadge="ВЫЗОВ МАСТЕРА"
+        priceLabel="от 500 ₽"
+        priceSuffix=" / выезд"
         features={[
-          "500 ₽ кредитов включено ежемесячно",
-          "Деплой приложений в облако",
-          "Визуальное редактирование",
-          "Синхронизация с Git",
+          "Диагностика неисправности",
+          "Мелкий ремонт кранов и смесителей",
+          "Устранение несложных засоров",
+          "Выезд в течение 1–2 часов",
         ]}
         className="lg:col-span-3"
-        cta="Начать"
+        cta="Заказать"
       />
 
       <PricingCard
-        titleBadge="КОМАНДА"
-        priceLabel="3 000 ₽"
-        priceSuffix="/чел/мес"
+        titleBadge="ПРОЧИСТКА ТРУБ"
+        priceLabel="от 1 500 ₽"
+        priceSuffix=" / точка"
         features={[
-          "3 000 ₽ кредитов на участника ежемесячно",
-          "Единый биллинг и управление командой",
-          "Общие чаты и совместная работа",
+          "Механическая и гидродинамическая прочистка",
+          "Канализация, раковины, унитазы",
+          "Видеодиагностика при необходимости",
         ]}
         className="lg:col-span-4"
+        cta="Заказать"
       />
 
       <PricingCard
-        titleBadge="БИЗНЕС"
-        priceLabel="10 000 ₽"
-        priceSuffix="/чел/мес"
-        features={["3 000 ₽ кредитов на участника ежемесячно", "Отключение обучения по умолчанию", "Полный доступ к API"]}
+        titleBadge="СРОЧНЫЙ ВЫЕЗД"
+        priceLabel="от 2 000 ₽"
+        priceSuffix=" / ночь"
+        features={[
+          "Приезд в течение 30–60 минут",
+          "Работаем ночью и в праздники",
+          "Устранение аварийных ситуаций",
+        ]}
         className="lg:col-span-4"
+        cta="Вызвать"
       />
 
       <PricingCard
-        titleBadge="КОРПОРАЦИЯ"
-        priceLabel="По запросу"
+        titleBadge="МОНТАЖ ПОД КЛЮЧ"
+        priceLabel="По смете"
         priceSuffix=""
         features={[
-          "Отключение обучения по умолчанию",
-          "SAML SSO",
-          "Приоритетный доступ",
-          "Персональная поддержка",
+          "Полная разводка водоснабжения и канализации",
+          "Установка ванн, душевых, унитазов",
+          "Монтаж водонагревателей и счётчиков",
+          "Гарантия и акт выполненных работ",
         ]}
         className="lg:col-span-8"
-        cta="Связаться"
+        cta="Получить смету"
       />
     </div>
   )
